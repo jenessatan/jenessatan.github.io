@@ -7,7 +7,7 @@ html, body {
 
 /* Hero */
 .hero {
-    background: url('../img/morning-road.jpg');
+    background: url('https://jenessatan.github.io/img/morning-road.jpg');
     background-size: cover;
     background-position: center;
     height: 100%;
