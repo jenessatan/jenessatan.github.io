@@ -6,7 +6,7 @@ body{
     background-color: rgb(69, 90, 134);
 }
 
-.header>h1 {
+.header h1 {
     padding: 0px 20px;
     font-size: 50px;
     color: white;
@@ -48,8 +48,108 @@ ul li:hover{
     justify-items: center;
 }
 
-img {
+.box {
+    position: relative;
     height: 200px;
     width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+
+.box img {
+    height: 200px;
+    width: 100%;
+    transition: .5s;
     object-fit: cover;
 }
+
+.box:hover img{
+    transform: rotate(-5deg) scale(1.2);
+    opacity: .5;
+    filter: blur(5px);
+}
+
+.caption {
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    right: 15px;
+    left: 15px;
+    /* background: #fff; */
+}
+
+.about {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    padding: 20px;
+    transition: .5s;
+    text-align: center;
+    opacity: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.box:hover .about {
+    opacity: 1;
+}
+
+.about h2 {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-size: 23px;
+    text-transform: uppercase;
+}
+
+.about h3 {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.about p {
+    color: #fff;
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.caption:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    box-sizing: border-box;
+    transition: .5s;
+    transform: scale(0,1);
+}
+
+.box:hover .caption:before {
+    transform: scale(1,1);
+}
+
+.caption:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    box-sizing: border-box;
+    transition: .5s;
+    transform: scale(1,0);
+}
+
+.box:hover .caption:after {
+    transform: scale(1,1);
+}
+

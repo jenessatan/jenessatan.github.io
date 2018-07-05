@@ -9,28 +9,97 @@
         <link rel="stylesheet" href="style.css">
 
         <link href="https://fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".button").click(function(){
+                    var value = $(this).attr("data-filter");
+                    if(value == "all"){
+                        $(".filter").show("1000");
+                    } else {
+                        $(".filter").not("."+value).hide("1000");
+                        $(".filter").filter("."+value).show("1000");
+                    }
+
+                    $("ul .button").click(function(){
+                        $(this).addClass('active').siblings().removeClass('active');
+                    })
+                })
+            })
+        </script>
     </head>
 
     <body>
         <div class="header">
             <h1>Projects</h1>
             <ul>
-                <li class="button" data-filter="all">All</li>
+                <li class="button active" data-filter="all">All</li>
                 <li class="button" data-filter="java">Java</li>
-                <li class="button" data-filter="c++">C++</li>
-                <li class="button" data-filter="web">Web</li>
+                <li class="button" data-filter="cpp">C++</li>
+                <!-- <li class="button" data-filter="web">Web</li> -->
                 <li class="button" data-filter="other">Other</li>
                 <div style="clear: both;"></div>
             </ul>
         </div>
 
         <div class="container">
-            <div class="box filter c++"><img src="Project Images/Arderpo.jpg"></div>
-            <div class="box filter java"><img src="Project Images/RoutesBusLocations.png"></div>
-            <div class="box filter java"><img src="Project Images/Urban Flow.png"></div>
-            <div class="box filter c++"><img src="Project Images/prunedrosa.png"></div>
-            <div class="box filter other"><img src="Project Images/Eh Aye.png"></div>
-            <div class="box filter c++"><img src="Project Images/Path Finding.png"></div>
+            <div class="box filter cpp">
+                <img src="Project Images/Arderpo.jpg">
+                <div class="caption">
+                    <div class="about">
+                        <h2>Arderpo</h2>
+                        <p>An Arduino-powered robot designed to traverse an unseen maze using ultrasonic sensors</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box filter java">
+                <img src="Project Images/RoutesBusLocations.png">
+                <div class="caption">
+                        <div class="about">
+                            <h2>Buses R Us</h2>
+                            <p>An Android application used to display local bus information, including bus routes and arrival times</p>
+                        </div>
+                    </div>
+                </div>
+            <div class="box filter java">
+                <img src="Project Images/Urban Flow.png">
+                <div class="caption">
+                        <div class="about">
+                            <h2>Urban Flow</h2>
+                            <p>An Android application used to facilitate the donation and delivery of menstrual cups to urban homeless shelters</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="box filter cpp">
+                <img src="Project Images/prunedrosa.png">
+                <div class="caption">
+                        <div class="about">
+                            <h2>Image Compression</h2>
+                            <p>A lossy image compression algorithm used to create algorithmic art</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="box filter other">
+                <img src="Project Images/Eh Aye.png">
+                <div class="caption">
+                        <div class="about">
+                            <h2>Eh? Aye!</h2>
+                            <h3>Episode 1: Laughing Matters</h3>
+                            <p>Diving into the realm of AI humour and deliberating the question, "can we actually make a truly funny artificial intelligence?"</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="box filter cpp">
+                <img src="Project Images/Path Finding.png">
+                <div class="caption">
+                        <div class="about">
+                            <h2>Image Path-finding</h2>
+                            <p>A breadth first traversal to find the shortest path between two pixels</p>
+                        </div>
+                    </div>
+            </div>
         </div>
     </body>
 </html>
