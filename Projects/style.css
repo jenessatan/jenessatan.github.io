@@ -64,7 +64,7 @@ ul li:hover{
 }
 
 .box:hover img{
-    transform: rotate(-5deg) scale(1.2);
+    transform: scale(1.1);
     opacity: .5;
     filter: blur(5px);
 }
@@ -79,7 +79,7 @@ ul li:hover{
 }
 
 .about {
-    position: absolute;
+    position: relative;
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
