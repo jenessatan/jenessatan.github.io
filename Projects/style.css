@@ -84,7 +84,7 @@ ul li:hover{
     transform: translateY(-50%);
     z-index: 1;
     padding: 20px;
-    transition: .5s;
+    transition: .2s;
     text-align: center;
     opacity: 0;
     font-family: "Montserrat", sans-serif;
@@ -127,7 +127,7 @@ ul li:hover{
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
     box-sizing: border-box;
-    transition: .5s;
+    transition: .35s;
     transform: scale(0,1);
 }
 
@@ -145,7 +145,7 @@ ul li:hover{
     border-left: 1px solid #fff;
     border-right: 1px solid #fff;
     box-sizing: border-box;
-    transition: .5s;
+    transition: .35s;
     transform: scale(1,0);
 }
 

@@ -1,0 +1,115 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    height: 100%;
+    width: 100%;
+    background: url("/img/coffee.png");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.navbar {
+    background: white;
+}
+
+.navbar div {
+    display: none;
+}
+
+.navbar .toggle,
+.navbar .brand {
+    display: inline-block;
+}
+
+.navbar .link {
+    display: block;
+    text-align: center;
+    padding: 1.5em 3em;
+    text-decoration: none;
+    /* background: #223047; */
+    color: #223047;
+}
+
+.navbar .link:hover,
+.navbar .link:active {
+    color: #223047;
+    background: white;
+}
+
+.navbar .brand {
+    width: 10em;
+    align: center;
+    padding: 1em;
+}
+
+.navbar .brand img {
+    width: 20%;
+    height: auto;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.navbar .toggle {
+    padding: 1em;
+    color: black;
+}
+
+@media (min-width: 48em) {
+    .navbar {
+        display: flex;
+    }
+
+    .navbar div {
+        display: flex;
+    }
+
+    .navbar .right {
+        display: flex;
+        flex: 1;
+    }
+
+    .navbar .link {
+        width: auto;
+    }
+
+    .navbar .right {
+        justify-content: flex-end;
+    }
+
+    .navbar .toggle {
+        display: none;
+    }
+}
+
+@media (max-width: 48em) {
+    .navbar.active .toggle {
+        background: #223047;
+        color: white;
+    }
+
+    .navbar .brand {
+        text-align: left;
+    }
+
+    .navbar .brand img {
+        width: 20%;
+        height: auto;
+    }
+
+    .navbar.active div {
+        display: block;
+    }
+}
+
+
+
