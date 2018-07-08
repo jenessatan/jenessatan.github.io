@@ -1,17 +1,9 @@
-body {
+html, body {
     margin: 0px;
     padding: 0px;
-}
-
-html {
-    font-family: "Montserrat", sans-serif;
-    /* text-transform: uppercase; */
-
-    /* background: url("/img/coffee.png");
     height: 100%;
     width: 100%;
-    background-size: cover;
-    background-position: center; */
+    font-family: "Montserrat", sans-serif;
 }
 
 
@@ -117,14 +109,13 @@ html {
     background: url('../img/coffee2.png');
     background-size: cover;
     background-position: center;
-    height: 1000px;
-    /* width: 100%; */
-    color: #fff;
-    /* display: flex;
+    height: 100vh;
+    width: 100%;
+    color: #000;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center; */
 }
 
 .mid {
@@ -137,7 +128,6 @@ html {
 
 .mid h2 {
     color:white;
-    font-family: 'Montserrat', sans-serif;
     font-size: 45px;
     font-weight: 100;
     /* letter-spacing: 10px; */

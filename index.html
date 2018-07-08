@@ -1,36 +1,49 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Jenessa Tan</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <head>
+        <meta charset='UTF-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Jenessa Tan</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+        <link rel="stylesheet" href="css/homepagestyle.css">
 
-    <!--Custom Stylesheet-->
-    <link rel="stylesheet" href="css/style.css">
+    </head>
 
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet">
-
-  </head>
-  <body>
-    <!-- Hero -->
-    <div class ="hero">
-        <div class ="middle">
-        <h1>Coming Soon</h1>
-        <hr>
+    <header>
+        <div class="navbar">
+            <a href="#" class="toggle" id="navHamburger">
+                <i class="fas fa-bars"></i>
+            </a>
+            <a href="index.html" class="brand">
+                <img src="/img/Logo.png">
+            </a>
+        
+            <div class="right">
+                <a href="index.html" class="link">Home</a>
+                <!-- <a href="/index.html" class="link">About</a> -->
+                <a href="/Projects/index.html" class="link">Projects</a>
+                <a href="mailto:jenessaxtan@gmail.com" class="link">Contact</a>
+            </div>
         </div>
-        <div class="lower-corner">
-          <a href="Projects/index.html">Click here to see some projects</a>
+    </header>
+    <body>
+        <div class="hero">
+            <div class="mid">
+                <h2>Hi! I'm an aspiring web and software developer based in Vancouver.</h2>
+                <div class="more">
+                    <a href="/Projects/index.html">Projects</a>
+                    <a href="mailto:jenessaxtan@gmail.com">Contact</a>
+                </div>
+            </div>
         </div>
-    </div>
+    </body>
 
-    <!-- JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-  </body>
+    <script>
+        const navHamburger = document.querySelector('#navHamburger');
+
+        navHamburger.addEventListener('click', (e) => {
+            navHamburger.parentElement.classList.toggle('active');
+        })
+    </script>
 </html>
