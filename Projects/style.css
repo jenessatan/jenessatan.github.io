@@ -6,6 +6,7 @@ body{
     background-color: rgb(69, 90, 134);
 }
 
+
 .header h1 {
     padding: 0px 20px;
     font-size: 50px;
@@ -151,5 +152,103 @@ ul li:hover{
 
 .box:hover .caption:after {
     transform: scale(1,1);
+}
+
+.navbar {
+    background: white;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.navbar div {
+    display: none;
+}
+
+.navbar .toggle,
+.navbar .brand {
+    display: inline-block;
+}
+
+.navbar .link {
+    display: block;
+    text-align: center;
+    padding: 1.5em 3em;
+    text-decoration: none;
+    /* background: #223047; */
+    color: #223047;
+}
+
+.navbar .link:hover,
+.navbar .link:active {
+    color: white;
+    background: #223047;
+}
+
+.navbar .brand {
+    width: 10em;
+    align: center;
+    padding: 1em;
+}
+
+.navbar .brand img {
+    width: 20%;
+    height: auto;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.navbar .toggle {
+    padding: 1em;
+    color: black;
+}
+
+@media (min-width: 48em) {
+    .navbar {
+        display: flex;
+    }
+
+    .navbar div {
+        display: flex;
+    }
+
+    .navbar .right {
+        display: flex;
+        flex: 1;
+    }
+
+    .navbar .link {
+        width: auto;
+    }
+
+    .navbar .right {
+        justify-content: flex-end;
+    }
+
+    .navbar .toggle {
+        display: none;
+    }
+}
+
+@media (max-width: 48em) {
+    .navbar.active .toggle {
+        background: #223047;
+        color: white;
+    }
+
+    .navbar .brand {
+        text-align: left;
+    }
+
+    .navbar .brand img {
+        width: 20%;
+        height: auto;
+    }
+
+    .navbar.active div {
+        display: block;
+    }
 }
 
