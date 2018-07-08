@@ -193,6 +193,7 @@ ul li:hover{
 .navbar .brand img {
     width: 20%;
     height: auto;
+    align-content: center;
 }
 
 .navbar a {
@@ -238,7 +239,7 @@ ul li:hover{
     }
 
     .navbar .brand {
-        text-align: left;
+        text-align: center;
     }
 
     .navbar .brand img {
