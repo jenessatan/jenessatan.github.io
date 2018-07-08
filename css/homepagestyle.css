@@ -117,8 +117,8 @@ html {
     background: url('../img/coffee2.png');
     background-size: cover;
     background-position: center;
-    height: 800px;
-    width: 800px;
+    height: 100%;
+    width: 100%;
     color: #fff;
     /* display: flex;
     flex-direction: column;
