@@ -40,8 +40,8 @@ html {
 
 .navbar .link:hover,
 .navbar .link:active {
-    color: #223047;
-    background: white;
+    color: white;
+    background: #223047;
 }
 
 .navbar .brand {
