@@ -158,6 +158,7 @@ ul li:hover{
     background: white;
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
+    z-index: 1000;
 }
 
 .navbar div {

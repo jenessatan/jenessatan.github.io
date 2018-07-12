@@ -10,6 +10,7 @@ html, body {
 .navbar {
     background: white;
     text-transform: uppercase;
+    z-index: 1000;
 }
 
 .navbar div {
