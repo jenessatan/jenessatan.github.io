@@ -46,7 +46,7 @@ html, body {
 .navbar .brand img {
     width: 20%;
     height: auto;
-    align: center;
+    align-content: center;
 }
 
 .navbar a {
@@ -98,7 +98,7 @@ html, body {
     .navbar .brand img {
         width: 20%;
         height: auto;
-        align: center;
+        align-content: center;
     }
 
     .navbar.active div {
@@ -107,6 +107,7 @@ html, body {
 }
 
 .hero {
+    position: absolute;
     background: url('../img/coffee2.png');
     background-size: cover;
     background-position: center;
