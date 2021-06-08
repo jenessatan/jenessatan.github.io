@@ -12,24 +12,7 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
 
         <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $(".button").click(function(){
-                    var value = $(this).attr("data-filter");
-                    if(value == "all"){
-                        $(".filter").show("1000");
-                    } else {
-                        $(".filter").not("."+value).hide("1000");
-                        $(".filter").filter("."+value).show("1000");
-                    }
-
-                    $("ul .button").click(function(){
-                        $(this).addClass('active').siblings().removeClass('active');
-                    })
-                })
-            })
-        </script>
+        <script src="script.js"></script>
 
     </head>
 
@@ -56,66 +39,121 @@
             <h1>Projects</h1>
             <ul>
                 <li class="button active" data-filter="all">All</li>
+                <li class="button" data-filter="web">Javascript</li>
+                <li class="button" data-filter="react">React</li>
+                <li class="button" data-filter="mongo">MongoDB</li>
+                <li class="button" data-filter="sql">SQL</li>
                 <li class="button" data-filter="java">Java</li>
-                <li class="button" data-filter="cpp">C++</li>
-                <li class="button" data-filter="web">Web</li>
-                <li class="button" data-filter="other">Other</li>
+                <li class="button" data-filter="csharp">C#</li>
+                <!-- <li class="button" data-filter="cpp">C++</li>
+                <li class="button" data-filter="other">Other</li> -->
                 <div style="clear: both;"></div>
             </ul>
         </div>
 
         <div class="container">
+            <div class="box filter web mongo react">
+                <img src="Project Images/tradeforce.jpg">
+                <div class="caption">
+                    <div class="about">
+                        <h2>Tradeforce</h2>
+                        <p>A full-stack web application that facilitates the exchange of unwanted items in a barter-like system</p>
+                        <div class="demo">
+                            <a href="https://github.com/Cainuse/tradeforce-client">Github</a>
+                            <a href="https://tradeforce.herokuapp.com/">Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box filter csharp sql react">
+                <img src="Project Images/ae-resource.png">
+                <div class="caption">
+                    <div class="about">
+                        <h2>AE Resource Management</h2>
+                        <p>A resource utilization optimization system for managing, assigning, and forecasting the workload of skilled personnel</p>
+                    </div>
+                </div>
+            </div>
             <div class="box filter web">
                 <img src="Project Images/Website.PNG">
                 <div class="caption">
                     <div class="about">
                         <h2>Personal Website</h2>
                         <p>Personal portfolio website to showcase recent projects</p>
+                        <div class="demo">
+                            <a href='https://github.com/jenessatan/jenessatan.github.io'>Github</a>
+                            <a href="https://jenessatan.github.io/">Demo</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="box filter cpp">
+            <div class="box filter web sql react">
+                <img src="Project Images/recommend.jpg">
+                <div class="caption">
+                    <div class="about">
+                        <h2>rECOmmend</h2>
+                        <p>A full-stack web application that encourages eco-friendly lifestyle changes by providing product alternatives</p>
+                        <div class="demo">
+                            <a href='https://github.com/jenessatan/rECOmmend'>Github</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box filter java">
+                <img src="Project Images/minesweeper.jpg">
+                <div class="caption">
+                    <div class="about">
+                        <h2>Minesweeper</h2>
+                        <p>A command line-based minesweeper game</p>
+                        <div class="demo">
+                            <a href='https://github.com/jenessatan/minesweeper'>Github</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box filter java">
+                <img src="Project Images/dictionary.jpg">
+                <div class="caption">
+                    <div class="about">
+                        <h2>Dictionary Client</h2>
+                        <p>A command-line based client program for retrieving definitions from a dictionary server following the IETF dictionary server protocol</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box filter web">
+                <img src="Project Images/disney-story.jpg">
+                <div class="caption">
+                    <div class="about">
+                        <h2>The Disney Story</h2>
+                        <p>A dynamic and interactive data visualization of the history of Disney Animation built with D3.js</p>
+                        <div class="demo">
+                            <a href="https://github.com/jenessatan/disney-story">Github</a>
+                            <a href="https://jenessatan.github.io/disney-story/">Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box filter web react mongo">
+                <img src="Project Images/mortal-ties.jpg">
+                <div class="caption">
+                    <div class="about">
+                        <h2>Mortal Ties</h2>
+                        <p>A web-based game designed to combat isolation and strengthen interpersonal connections (WIP)</p>
+                        <div class="demo">
+                            <a href="https://github.com/jenessatan/mortal-ties">Github</a>
+                            <a href="https://mortal-ties.herokuapp.com/">Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="box filter cpp">
                 <img src="Project Images/Arderpo.jpg">
                 <div class="caption">
                     <div class="about">
                         <h2>Arderpo</h2>
                         <p>An Arduino-powered robot designed to traverse an unseen maze using ultrasonic sensors</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box filter cpp">
-                <img src="Project Images/prunedrosa.png">
-                <div class="caption">
-                    <div class="about">
-                        <h2>Image Compression</h2>
-                        <p>A lossy image compression algorithm used to create algorithmic art</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box filter java">
-                <img src="Project Images/RoutesBusLocations.png">
-                <div class="caption">
-                    <div class="about">
-                        <h2>Buses R Us</h2>
-                        <p>An Android application used to display local bus information, including bus routes and arrival times</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box filter java">
-                <img src="Project Images/Urban Flow.png">
-                <div class="caption">
-                    <div class="about">
-                        <h2>Urban Flow</h2>
-                        <p>An Android application used to facilitate the donation and delivery of menstrual cups to urban homeless shelters</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box filter cpp">
-                <img src="Project Images/Path Finding.png">
-                <div class="caption">
-                    <div class="about">
-                        <h2>Image Path-finding</h2>
-                        <p>A breadth first traversal to find the shortest path between two pixels</p>
                     </div>
                 </div>
             </div>
@@ -129,7 +167,7 @@
                             a truly funny artificial intelligence?"</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </body>
     <script>
