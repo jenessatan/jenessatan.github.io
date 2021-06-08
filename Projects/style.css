@@ -4,6 +4,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: rgb(69, 90, 134);
+    overflow-x: hidden
 }
 
 
@@ -251,5 +252,25 @@ ul li:hover{
     .navbar.active div {
         display: block;
     }
+}
+
+.demo {
+    margin-top: 5%;
+}
+
+.demo a {
+    border: 1px solid white;
+    padding: 1%;
+    margin: 3%;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.demo a:hover {
+    color: white;
+    background: #223047;
+    border: 1px solid #223047;
 }
 
