@@ -1,0 +1,93 @@
+[
+  {
+    "title": "",
+    "description": "",
+    "tags": [""],
+    "github": "", 
+    "demo": ""
+  },
+  {
+    "title": "rECOmmend",
+    "description": "A full-stack web application that encourages eco-friendly lifestyle changes by providing product alternatives",
+    "tags": ["react", "javascript", "sql", "web", "fullstack"],
+    "github": "https://github.com/jenessatan/rECOmmend",
+    "demo": ""
+  },
+  {
+    "title": "Tradeforce",
+    "description": "A full-stack web application that facilitates the exchange of unwanted items in a barter-like system",
+    "tags": ["react", "javascript", "mongodb", "web", "fullstack", "socket"],
+    "github": "https://github.com/Cainuse/tradeforce-client",
+    "demo": "https://tradeforce.herokuapp.com/"
+  },
+  {
+    "title": "AE Resource Management",
+    "description": "A resource utilization optimization system for managing, assigning, and forecasting the workload of skilled personnel",
+    "tags": ["react", "c#", ".net core", "sql", "javascript", "assignment"],
+    "github": "", 
+    "demo": ""
+  },
+  {
+    "title": "Minesweeper",
+    "description": "A command line-based minesweeper game",
+    "tags": ["java", "language-practice"],
+    "github": "https://github.com/jenessatan/minesweeper", 
+    "demo": ""
+  },
+  {
+    "title": "Hangman",
+    "description": "A command line-based hangman game",
+    "tags": ["python", "language-practice"],
+    "github": "https://github.com/jenessatan/py-hangman", 
+    "demo": ""
+  },
+  {
+    "title": "Dictionary Client",
+    "description": "A command-line based client program for retrieving definitions from a dictionary server following the IETF dictionary server protocol",
+    "tags": ["java", "socket", "assignment"],
+    "github": "", 
+    "demo": ""
+  },
+  {
+    "title": "FTP Server",
+    "description": "A minimal FTP (file transfer protocol) server capable of interacting with a variety of FTP clients",
+    "tags": ["c", "socket", "assignment"],
+    "github": "", 
+    "demo": ""
+  },
+  {
+    "title": "The Disney Story",
+    "description": "A dynamic and interactive data visualization of the history of Disney Animation",
+    "tags": ["javascript", "d3", "assignment"],
+    "github": "https://github.com/jenessatan/disney-story", 
+    "demo": "https://jenessatan.github.io/disney-story/"
+  },
+  {
+    "title": "Mortal Ties",
+    "description": "A web-based game designed to combat isolation and strengthen interpersonal connections",
+    "tags": ["javascript", "react", "mongodb", "web", "fullstack", "socket"],
+    "github": "https://github.com/jenessatan/mortal-ties", 
+    "demo": "https://mortal-ties.herokuapp.com/"
+  },
+  {
+    "title": "ErrorProne Bug Checker Plugin",
+    "description": "A plugin for the static analysis tool ErrorProne that detects the use of modulo 1 (a common bug pattern)",
+    "tags": ["java", "static analysis", "errorprone", "assignment"],
+    "github": "", 
+    "demo": ""
+  }, 
+  {
+    "title": "Integer Sign Analysis",
+    "description": "A tool that dynamically analyzes a program's code to identify the sign of local integer variables using Soot's dataflow analysis capabilities",
+    "tags": ["java", "dynamic analysis", "soot", "assignment"],
+    "github": "", 
+    "demo": ""
+  },
+  {
+    "title": "Arderpo",
+    "description": "An Arduino-powered semi-autonomous robot that exercised obstacle avoidance to successfully navigate through various mazes",
+    "tags": ["c/c++", "arduino", "assignment"],
+    "github": "", 
+    "demo": ""
+  }
+]
