@@ -30,7 +30,7 @@ export const StyledMenu = styled.nav`
   right: 0;
   transition: opacity 0.3s ease-in-out;
   opacity: ${({ open }) => (open ? "1" : "0")};
-  z-index: ${({ open }) => (open ? "5" : "-5")};
+  z-index: ${({ open }) => (open ? "5" : "-500")};
 
   @media (max-width: 768px) {
     width: 100%;

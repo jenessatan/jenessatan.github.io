@@ -43,7 +43,7 @@ const NavLink = styled(Link)`
   color: #fff;
   display: flex;
   align-items: center;
-  padding: 0 1rem;
+  padding: 0 2rem;
   height: 100%;
   cursor: pointer;
   text-decoration: none;
